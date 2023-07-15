@@ -1,26 +1,74 @@
 .btn {
-  display: inline-flex;
-  padding: 10px 20px;
+  // display: inline-flex;
+  display: inline-block;
+  padding: 20px 56px;
+
+  text-align: center;
+  font-family: $ff-secondary;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px; /* 100% */
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
 
   color: $color-default-white;
-
-  background-color: $color-neon-blue;
-  border: none;
+  background-color: $color-transparent;
+  border: 4px solid $color-btn-board-primary;
   cursor: pointer;
 
   transition: opacity $trans-default;
 
-  &--red {
-    background-color: $color-torch-red;
+  &:hover,
+  &:focus {
+    color: $color-text-additional;
+    background-color: $color-btn-board-primary;
+  }
+
+  &:active {
+    color: $color-text-main;
+    background-color: $color-btn-board-primary;
   }
 
   &:disabled {
     opacity: 0.5;
-
     pointer-events: none;
+  }
+
+  &--white {
+    color: $color-text-main;
+    background-color: $color-default-white;
+    border: 2px solid $color-btn-board-secondary;
+
+    &:hover,
+    &:focus {
+      color: $color-default-white;
+      background-color: $color-btn-background;
+      border: none;
+    }
+
+    &:active {
+      color: $color-transparent-active;
+      background-color: $color-btn-background;
+      border: none;
+    }
+
+    &:disabled {
+      opacity: 0.3;
+      pointer-events: none;
+      color: $color-btn-board-secondary;
+      background-color: $color-btn-board-secondary;
+      border: 2px solid $color-btn-board-secondary;
+    }
   }
 
   @include hover-focus {
     opacity: 0.8;
   }
 }
+
+
+
+
+
+

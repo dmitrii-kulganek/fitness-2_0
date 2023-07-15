@@ -7,16 +7,82 @@
     <meta name="description" content="Фитнес центр Supergym">
     <title>Фитнес 2.0</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="./fonts/alumni-sans-v16-cyrillic_latin-600.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/roboto-condensed-v25-cyrillic_latin-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/alumni-sans-v16-cyrillic_latin-600.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-condensed-v25-cyrillic_latin-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="icon" href="favicon.ico">
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
+      <header class="main-header">
+        <div class="container">
+          <div class="main-header__wrapper">
+            <div class="main-header__logotype">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/svg/supergym-mobile-header.svg">
+                <source media="(max-width: 1199px)" srcset="img/svg/supergym-tablet-header.svg">
+                <img src="img/svg/supergym-desktop-header.svg" alt="Логотоп фитнес центра Supergym.">
+              </picture>
+            </div>
+            <a class="main-header__link" href="tel:88005555555">
+              <span class="main-header__number">8-800-555-55-55</span>
+            </a>
+          </div>
+      </div>
       </header>
+
       <main>
+        <section class="hero">
+          <div class="container">
+            <div class="hero__wrapper">
+              <div class="hero__description">
+                <p>Омск</p>
+                <h1>Фитнес<br>центр</h1>
+                <ul>
+                  <li>Тренажёрный зал</li>
+                  <li>Групповые занятия</li>
+                  <li>Кардио-зона</li>
+                </ul>
+                <button class="btn" onclick="window.location.href='#subscriptions'">
+                  Купить абонемент
+                </button>
+              </div>
+              <picture>
+                <source type="image/webp" srcset="img/hero/hero.webp 1x, img/hero/hero@2x.webp 2x">
+                <source type="image/jpeg" srcset="img/hero/hero.jpg 1x, img/hero/hero@2x.jpg 2x">
+                <img class="promotion__foto" src="img/hero/hero.jpg" srcset="img/hero/hero@2x.jpg 2x" width="500" height="556" alt="Изображение супермена.">
+              </picture>
+            </div>
+          </div>
+        </section>
+
+        <section class="subscriptions" name="subscriptions">
+          <div class="container">
+            <div class="subscriptions__wrapper">
+              Тут АбОНЕМЕНТЫБ<br>
+              Тут АбОНЕМЕНТЫБ<br>
+              Тут АбОНЕМЕНТЫБ<br>
+              Тут АбОНЕМЕНТЫБ<br>
+              Тут АбОНЕМЕНТЫБ<br>
+              Тут АбОНЕМЕНТЫБ<br>
+              Тут АбОНЕМЕНТЫБ<br>
+              Тут АбОНЕМЕНТЫБ<br>
+              Тут АбОНЕМЕНТЫБ<br>
+              Тут АбОНЕМЕНТЫБ<br>
+              Тут АбОНЕМЕНТЫБ<br>
+              Тут АбОНЕМЕНТЫБ<br>
+              Тут АбОНЕМЕНТЫБ<br>
+              Тут АбОНЕМЕНТЫБ<br>
+              Тут АбОНЕМЕНТЫБ<br>
+              Тут АбОНЕМЕНТЫБ<br>
+              Тут АбОНЕМЕНТЫБ<br>
+              Тут АбОНЕМЕНТЫБ<br>
+              Тут АбОНЕМЕНТЫБ<br>
+              Тут АбОНЕМЕНТЫБ<br>
+              Тут АбОНЕМЕНТЫБ<br>
+            </div>
+          </div>
+        </section>
+
         <section class="intro">
           <div class="container">
             <h1>Тестовая страница.</h1>
@@ -28,7 +94,9 @@
         </section>
       </main>
       <footer>
-        <div class="container"></div>
+        <div class="container">
+          Тут есть фУУУтер
+        </div>
       </footer>
     </div>
 

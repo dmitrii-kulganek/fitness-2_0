@@ -10,12 +10,33 @@ $color-transparent:                 rgba(255, 255, 255, 0);
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
-$color-neon-blue:                   #2c39f2;
-$color-torch-red:                   #ff1553;
+$color-transparent-active:          rgba(255, 255, 255, 0.7);
+
+$color-text-main:                   #102654;
+$color-text-additional:             #103aae;
+
+$color-btn-board-primary:           #ffffff;
+$color-btn-board-secondary:         #102654;
+
+$color-bg-main:                     #ffffff;
+$color-bg-additional:               #f8f9fc;
+$color-bg-banner:                   #ed0233;
+$color-bg-dark:                     #102654;
+
+$color-bg-footer:                   #102654;
+
+$color-icon-primary:                #ffffff;
+$color-icon-secondary:              #102654;
+
+$color-form-main:                   #ffffff;
+$color-form-error:                  #102654;
 
 // Gradient
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+$color-text-additional-gradient:    linear-gradient(to right, #d10a42, #0041ca);
+$color-btn-background:              linear-gradient(to right, #ed0233, #003eb7);
+$color-bg-mainscreen:               conic-gradient(from 83deg at 16.03% 39.06%,#b80027 ,#003d85 87deg,#b80027 356deg);
 
 // Typography
 // ---------------------------------
@@ -27,7 +48,8 @@ $fz-default:                        16px;
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
 $ff-rouble:                         "Rouble", "Arial", sans-serif;
 
-$ff-alumni-sans:                    "Alumni Sans", "Arial", sans-serif;
+$ff-primary:                    "Alumni Sans", "Arial", sans-serif;
+$ff-secondary:                  "Roboto Condensed", "Arial", sans-serif;
 
 // Animation
 // ---------------------------------
